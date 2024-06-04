@@ -11,7 +11,7 @@ const Logo = ({ className }: Props) => {
     <Link
       href="/"
       className={cn(
-        "flex items-center gap-1 rounded bg-blue-400 p-1.5 px-3 text-sm font-semibold uppercase tracking-wider text-blue-100 transition-opacity hover:opacity-80",
+        "flex items-center gap-1 rounded text-sm font-semibold uppercase tracking-wider text-primary transition-opacity hover:opacity-80",
         className,
       )}
     >

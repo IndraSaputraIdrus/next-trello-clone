@@ -4,11 +4,11 @@ import { Button } from "../ui/button";
 const Footer = () => {
   return (
     <footer>
-      <Container className="flex items-center justify-between gap-3 py-3 md:justify-end">
-        <Button variant="ghost" size="sm">
+      <Container className="flex items-center justify-between gap-3 py-3 md:justify-center">
+        <Button className="text-muted-foreground" variant="ghost" size="sm">
           Privacy Policy
         </Button>
-        <Button variant="ghost" size="sm">
+        <Button className="text-muted-foreground" variant="ghost" size="sm">
           Terms of Service
         </Button>
       </Container>
