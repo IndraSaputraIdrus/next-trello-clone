@@ -31,7 +31,7 @@ const MarketingPage = () => {
           </p>
         </div>
         <p className="mx-auto mt-6 max-w-md text-balance text-center text-sm text-neutral-400 md:max-w-2xl md:text-xl">
-          Collaborate, manage project, and reacth new productivity peaks. From
+          Collaborate, manage project, and reach new productivity peaks. From
           high rises to the home office, the way your team works is unique -
           accomlish it all with Taskify
         </p>
