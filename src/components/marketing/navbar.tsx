@@ -1,9 +1,9 @@
-import { SignedIn, SignedOut, ClerkLoaded, ClerkLoading, UserButton } from "@clerk/nextjs";
+import { SignedIn, SignedOut } from "@clerk/nextjs";
 import Container from "../container";
 import Logo from "../logo";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { Skeleton } from "../ui/skeleton";
+import { MyUserButton } from "../my-user-button";
 
 const Navbar = () => {
   return (
@@ -17,10 +17,7 @@ const Navbar = () => {
             </Button>
           </SignedOut>
           <SignedIn>
-            <ClerkLoading>
-              <Skeleton className="size-[28px] rounded-full" />
-            </ClerkLoading>
-            <ClerkLoaded><UserButton /></ClerkLoaded>
+            <MyUserButton />
           </SignedIn>
           <Button size="sm">Get taskify for free</Button>
         </div>
