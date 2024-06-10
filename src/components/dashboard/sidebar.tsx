@@ -5,7 +5,6 @@ import { Plus } from "lucide-react"
 import { useLocalStorage } from "usehooks-ts"
 import { useOrganization, useOrganizationList } from "@clerk/nextjs"
 import { Button } from "../ui/button"
-import { Separator } from "../ui/separator"
 import { Skeleton } from "../ui/skeleton"
 import { Accordion } from "../ui/accordion"
 import { SidebarItem } from "./sidebar-item"
@@ -42,9 +41,7 @@ const AppSidebar = ({ storageKey = "t-sidebar-state" }: Props) => {
   }
 
   return (
-    <aside
-      className="w-64 shrink-0 hidden md:block"
-    >
+    <aside>
       <div className="flex items-center justify-between mb-3">
         <h3 className="font-semibold">Workspaces</h3>
         <Button asChild size="icon" variant="ghost">
@@ -59,7 +56,7 @@ const AppSidebar = ({ storageKey = "t-sidebar-state" }: Props) => {
         className="space-y-2"
       >
         {userMemberships?.data.map(({ organization }) => (
-        <SidebarItem 
+          <SidebarItem
             isActive={activeOrganization?.id === organization.id}
             isExpanded={expanded[organization.id]}
             organization={organization}

@@ -8,7 +8,6 @@ import {
   Layout,
   LucideIcon,
   Settings,
-  Icon
 } from "lucide-react"
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
@@ -84,7 +83,7 @@ export const SidebarItem = ({
           <p className="font-medium text-xs">{organization.name}</p>
         </div>
       </AccordionTrigger>
-      <AccordionContent className="pt-1 text-neutral-700">
+      <AccordionContent className="pt-1 text-neutral-700 px-1">
         {routes.map(route => (
           <Button
             key={route.href}
