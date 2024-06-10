@@ -11,6 +11,7 @@ import {
 } from "lucide-react"
 import { usePathname, useRouter } from "next/navigation";
 import { Button } from "../ui/button";
+import { Skeleton } from "../ui/skeleton";
 
 type Props = {
   isActive: boolean;
@@ -104,5 +105,16 @@ export const SidebarItem = ({
         ))}
       </AccordionContent>
     </AccordionItem>
+  )
+}
+
+SidebarItem.Skeleton = () => {
+  return (
+    <div className="flex items-center gap-2">
+      <div className="size-10 relative shrink-0">
+        <Skeleton className="size-full absolute" />
+      </div>
+      <Skeleton className="h-10 w-full" />
+    </div>
   )
 }

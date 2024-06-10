@@ -42,7 +42,7 @@ const MobileSidebar = () => {
       <Sheet open={isOpen} onOpenChange={onClose}>
         <SheetContent
           side="left"
-          className="p-2 pt-10"
+          className="p-2 pt-16 px-4"
         >
           <AppSidebar
             storageKey="t-sidebar-mobile-state"
