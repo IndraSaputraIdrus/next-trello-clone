@@ -8,7 +8,7 @@ type Props = {
 const OrganizationLayout = ({ children }: Props) => {
   return (
     <div className="pt-16 md:pt-20">
-      <Container className="flex gap-6 *:border *:border-red-500">
+      <Container className="flex gap-6">
         <AppSidebar />
         {children}
       </Container>
