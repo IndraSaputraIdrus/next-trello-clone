@@ -8,9 +8,7 @@ const DashboardLayout = ({
   return (
     <div className="min-h-dvh flex flex-col">
       <DashboardNavbar />
-      <main className="flex-1">
-        {children}
-      </main>
+      {children}
     </div>
   )
 }

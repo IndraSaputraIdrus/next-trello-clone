@@ -8,7 +8,7 @@ import MobileSidebar from "./sidebar-mobile"
 
 const DashboardNavbar = () => {
   return (
-    <header className="fixed z-50 top-0 h-14 w-full bg-white flex items-center border-b shadow-sm">
+    <header className="sticky z-50 top-0 h-14 w-full bg-white flex items-center border-b shadow-sm">
       <Container className="flex items-center justify-between">
         <div className="flex items-center gap-2">
           <MobileSidebar />
