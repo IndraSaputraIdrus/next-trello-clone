@@ -1,6 +1,7 @@
 "use client"
 
 import { OrganizationProfile, useOrganization } from "@clerk/nextjs"
+import { Loader2 } from "lucide-react"
 
 export const OrgSetting = () => {
   const {
@@ -9,7 +10,9 @@ export const OrgSetting = () => {
 
   if (!isLoaded) {
     return (
-      <h1>Loading ...</h1>
+      <div className="grow flex items-center justify-center w-full h-full">
+        <Loader2 className="animate-spin size-10" />
+      </div>
     )
   }
 
